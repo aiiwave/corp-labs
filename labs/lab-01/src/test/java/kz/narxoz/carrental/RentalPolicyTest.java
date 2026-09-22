@@ -11,7 +11,6 @@ class RentalPolicyTest {
 
     private final RentalPolicy policy = new RentalPolicy();
 
-    // The two allowed rows from the README status table.
     @ParameterizedTest
     @CsvSource({
             "REQUESTED, APPROVED, APPROVED",
@@ -21,7 +20,6 @@ class RentalPolicyTest {
         assertEquals(expected, policy.move(from, to));
     }
 
-    // The two forbidden rows from the README status table.
     @ParameterizedTest
     @CsvSource({
             "REQUESTED, RENTED",
