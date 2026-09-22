@@ -1,9 +1,5 @@
 package kz.narxoz.carrental;
 
-/**
- * Identifier of a rental request.
- * It cannot be null or blank.
- */
 public final class RentalId {
 
     private final String value;
