@@ -1,6 +1,6 @@
 # Product
 
-We build a car rental system. People track rental requests.
+I built a car rental system. People track rental requests.
 
 # Core item
 
