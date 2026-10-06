@@ -18,7 +18,6 @@ public class RentalRegistrationService {
         this.rentals = rentals;
     }
 
-    /** One transaction per call. A duplicate key becomes DuplicateRental. */
     @Transactional
     public void register(RentalId id, String businessKey, String title) {
         requireText(businessKey, "businessKey");
@@ -30,7 +29,6 @@ public class RentalRegistrationService {
         }
     }
 
-    /** One transaction, two INSERTs. The second fails, so everything rolls back. */
     @Transactional
     public void insertTwice(String businessKey) {
         requireText(businessKey, "businessKey");

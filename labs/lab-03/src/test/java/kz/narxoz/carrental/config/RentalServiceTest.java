@@ -14,7 +14,6 @@ import kz.narxoz.carrental.domain.TerminalStatusRule;
 import kz.narxoz.carrental.domain.TransitionRule;
 import org.junit.jupiter.api.Test;
 
-/** Week 4: one mocked outbound port. No HTTP, no database. */
 class RentalServiceTest {
 
     private final NotificationPort port = mock(NotificationPort.class);

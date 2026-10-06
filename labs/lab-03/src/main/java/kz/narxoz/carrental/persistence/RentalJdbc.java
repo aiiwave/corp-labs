@@ -30,7 +30,6 @@ public class RentalJdbc {
         return n == null ? 0 : n;
     }
 
-    /** Text column -> enum. Unknown text throws, it never becomes a new status. */
     public Optional<RentalStatus> findStatus(String businessKey) {
         return jdbc.query(
                 "SELECT status FROM rental_request WHERE business_key = ?",
