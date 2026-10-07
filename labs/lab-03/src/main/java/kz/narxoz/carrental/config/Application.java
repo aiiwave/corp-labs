@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-// Application lives in config, so we scan the whole root package (persistence, client, ...).
 @SpringBootApplication(scanBasePackages = "kz.narxoz.carrental")
 public class Application {
 
